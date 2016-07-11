@@ -16,6 +16,11 @@ class UserInterface {
 		this.anagram = new Anagram();
 	}
 
+	/**
+	 * Prompts the user for two words.
+	 *
+	 * @return The words input by the user.
+	 */
 	private ArrayList<String> promptWords() {
 		ArrayList<String> words = new ArrayList<String>();
 
@@ -28,6 +33,9 @@ class UserInterface {
 		return words;
 	}
 
+	/**
+	 * Prompts the user for two words to check if they are an anagram and displays the result.
+	 */
 	void promptAnagram() {
 		List<String> words = this.promptWords();
 
@@ -41,6 +49,11 @@ class UserInterface {
 		}
 	}
 
+	/**
+	 * Prompts the user if they would like to continue.
+	 *
+	 * @return Returns true if the user would like to continue. Otherwise, returns false.
+	 */
 	boolean continuePrompt() {
 		String option;
 
