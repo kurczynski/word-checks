@@ -21,11 +21,10 @@ class Anagram {
 		}
 
 		for (char a : stringA.toCharArray()) {
-			for (char b : stringB.toCharArray()) {
-				if (a == b) {
-					int index = stringBuilderB.lastIndexOf(String.valueOf(b));
-					stringBuilderB.deleteCharAt(index);
-				}
+			int index = stringBuilderB.lastIndexOf(String.valueOf(a));
+
+			if (index != -1) {
+				stringBuilderB.deleteCharAt(index);
 			}
 		}
 

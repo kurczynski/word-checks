@@ -8,6 +8,6 @@ public class WordChecks {
 			userInterface.promptAnagram();
 		} while (userInterface.continuePrompt());
 
-		System.out.println("Exitting...");
+		System.out.println("Exiting...");
 	}
 }
